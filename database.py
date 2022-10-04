@@ -1,4 +1,5 @@
 import csv
+from xml.dom.pulldom import END_
 import config
 
 
@@ -51,7 +52,7 @@ class Clientes:
         for indice, cliente in enumerate(Clientes.lista):
             if cliente.dni == dni:
                 cliente = Clientes.lista.pop(indice)
-                Clientes.guardar()
+                cliente.guardar()
                 return cliente
 
     @staticmethod

@@ -60,3 +60,5 @@ class TestDatabase(unittest.TestCase):
         self.assertEqual(dni, '28Z')
         self.assertEqual(nombre, 'Mariana')
         self.assertEqual(apellido, 'García')
+
+        
